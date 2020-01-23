@@ -11,6 +11,12 @@ end
 def print_first_directors_movie_titles
   data = directors_database()
   speilberg = data[0][:movies]
-  pp speilberg
+  str = []
+  speilberg.each do |elem|
+    str << elem[:title]
+  end
+  str = str.join('')
+  pp str
+
 end
 #pp data
