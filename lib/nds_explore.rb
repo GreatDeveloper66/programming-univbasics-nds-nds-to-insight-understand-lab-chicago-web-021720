@@ -15,7 +15,7 @@ def print_first_directors_movie_titles
   speilberg.each do |elem|
     str << elem[:title]
   end
-  str = str.join('\n')
+  str = str.join('/\n')
   pp str
 
 end
