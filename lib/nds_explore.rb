@@ -10,8 +10,7 @@ end
 
 def print_first_directors_movie_titles
   data = directors_database()
-  speilberg = data[0][:movies]
-  speilberg.each do |elem|
+  data[0][:movies].each do |elem|
     puts elem[:title]
   end
 end
