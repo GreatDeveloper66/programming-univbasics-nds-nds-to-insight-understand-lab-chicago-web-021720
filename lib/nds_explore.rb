@@ -16,8 +16,6 @@ def print_first_directors_movie_titles
     str << elem[:title]
   end
   str = str.join('\n')
-  puts str
-
-
+  puts 'hi\nhello\ngoodbye'
 end
 #pp data
