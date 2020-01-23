@@ -13,8 +13,10 @@ def print_first_directors_movie_titles
   speilberg = data[0][:movies]
   str = []
   speilberg.each do |elem|
-    puts elem[:title]
+    str << elem[:title]
   end
+  str = str.join('\n')
+  puts str
 
 
 end
